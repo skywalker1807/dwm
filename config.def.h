@@ -93,7 +93,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_F",      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_F2,      quit,           {0} },
 };
 
 /* button definitions */
