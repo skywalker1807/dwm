@@ -1729,7 +1729,7 @@ tile(Monitor *m)
 	for (i = 0, my = ty = gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
 		if (i < m->nmaster) {
 			r = MIN(n, m->nmaster) - i;
-			h = (m->wh - my) / r;
+			h = (m->wh - my) / r - gappx;
 			resize(c, m->wx + gappx, m->wy + my, mw - (2*c->bw) - gappx, h - (2*c->bw), 0);
 			my += HEIGHT(c) + gappx;
 		} else {
